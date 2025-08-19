@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ShopMate - Home</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/">ShopMate</a>
+      <nav>
+        <a href="/products.html">Products</a>
+        <a href="/cart.html">Cart</a>
+        <a href="/auth.html">Login/Register</a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <h1>Your friendly basic e-commerce site</h1>
+        <p>Browse products, add to cart, and place orders.</p>
+        <a class="btn" href="/products.html">Shop now</a>
+      </section>
+    </main>
+    <footer class="site-footer">© <span id="year"></span> ShopMate</footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
