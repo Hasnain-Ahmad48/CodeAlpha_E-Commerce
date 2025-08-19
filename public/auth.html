@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login / Register - ShopMate</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/">ShopMate</a>
+      <nav>
+        <a href="/products.html">Products</a>
+        <a href="/cart.html">Cart</a>
+        <a href="/auth.html" class="active">Login/Register</a>
+      </nav>
+    </header>
+    <main class="container auth-grid">
+      <section>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Name <input type="text" name="name" required /></label>
+          <label>Password <input type="password" name="password" required minlength="6" /></label>
+          <button class="btn" type="submit">Create account</button>
+        </form>
+      </section>
+      <section>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Password <input type="password" name="password" required /></label>
+          <button class="btn" type="submit">Sign in</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">© <span id="year"></span> ShopMate</footer>
+    <script type="module" src="/scripts/auth.js"></script>
+  </body>
+  </html>
+

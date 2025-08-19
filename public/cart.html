@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Cart - ShopMate</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/">ShopMate</a>
+      <nav>
+        <a href="/products.html">Products</a>
+        <a href="/cart.html" class="active">Cart</a>
+        <a href="/auth.html">Login/Register</a>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Your Cart</h1>
+      <div id="cart-items"></div>
+      <div id="cart-summary" class="cart-summary"></div>
+      <button id="checkout-btn" class="btn">Checkout</button>
+    </main>
+    <footer class="site-footer">© <span id="year"></span> ShopMate</footer>
+    <script type="module" src="/scripts/cart.js"></script>
+  </body>
+  </html>
+
